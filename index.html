@@ -93,26 +93,26 @@
         .section-subtitle { font-size: 20px; color: #71717a; max-width: 850px; margin: 0 auto; font-weight: 500; }
         
         .platform-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 35px; }
-        .platform-card { background: rgba(21, 25, 51, 0.6); backdrop-filter: blur(20px); border-radius: 25px; padding: 40px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4); transition: all 0.4s; border: 1px solid rgba(0, 245, 255, 0.15); position: relative; overflow: hidden; }
+        .platform-card { background: rgba(21, 25, 51, 0.6); backdrop-filter: blur(20px); border-radius: 20px; padding: 25px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4); transition: all 0.4s; border: 1px solid rgba(0, 245, 255, 0.15); position: relative; overflow: hidden; }
         .platform-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: linear-gradient(90deg, #00f5ff, #7b2ff7); transform: scaleX(0); transition: transform 0.4s; }
-        .platform-card:hover { transform: translateY(-15px); box-shadow: 0 25px 60px rgba(0, 245, 255, 0.3); border-color: #00f5ff; background: rgba(21, 25, 51, 0.8); }
+        .platform-card:hover { transform: translateY(-10px); box-shadow: 0 20px 50px rgba(0, 245, 255, 0.3); border-color: #00f5ff; background: rgba(21, 25, 51, 0.8); }
         .platform-card:hover::before { transform: scaleX(1); }
         
-        .card-header { display: flex; align-items: center; gap: 22px; margin-bottom: 25px; }
-        .platform-icon { width: 75px; height: 75px; background: linear-gradient(135deg, #00f5ff 0%, #7b2ff7 100%); border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 36px; color: white; box-shadow: 0 8px 25px rgba(0, 245, 255, 0.4); }
-        .platform-card h3 { font-size: 26px; color: #fafafa; margin: 0; font-weight: 800; }
-        .rating { color: #fbbf24; font-size: 18px; margin-top: 6px; text-shadow: 0 0 10px rgba(251, 191, 36, 0.5); }
-        .platform-card p { color: #a1a1aa; margin-bottom: 25px; font-size: 15px; font-weight: 500; line-height: 1.6; }
+        .card-header { display: flex; align-items: center; gap: 15px; margin-bottom: 18px; }
+        .platform-icon { width: 55px; height: 55px; background: linear-gradient(135deg, #00f5ff 0%, #7b2ff7 100%); border-radius: 15px; display: flex; align-items: center; justify-content: center; font-size: 28px; color: white; box-shadow: 0 5px 20px rgba(0, 245, 255, 0.4); flex-shrink: 0; }
+        .platform-card h3 { font-size: 20px; color: #fafafa; margin: 0; font-weight: 800; }
+        .rating { color: #fbbf24; font-size: 15px; margin-top: 4px; text-shadow: 0 0 10px rgba(251, 191, 36, 0.5); }
+        .platform-card p { color: #a1a1aa; margin-bottom: 15px; font-size: 14px; font-weight: 500; line-height: 1.5; }
         
-        .benefits { list-style: none; margin: 25px 0; }
-        .benefits li { padding: 10px 0; color: #d4d4d8; position: relative; padding-left: 35px; font-size: 15px; font-weight: 500; }
-        .benefits li:before { content: "⚡"; position: absolute; left: 0; font-size: 20px; color: #00f5ff; text-shadow: 0 0 10px rgba(0, 245, 255, 0.8); }
+        .benefits { list-style: none; margin: 15px 0; }
+        .benefits li { padding: 6px 0; color: #d4d4d8; position: relative; padding-left: 25px; font-size: 14px; font-weight: 500; }
+        .benefits li:before { content: "⚡"; position: absolute; left: 0; font-size: 16px; color: #00f5ff; text-shadow: 0 0 10px rgba(0, 245, 255, 0.8); }
         
-        .platform-button { display: block; text-align: center; padding: 18px; background: linear-gradient(135deg, #00f5ff 0%, #7b2ff7 100%); color: white; text-decoration: none; border-radius: 15px; font-weight: 800; margin-top: 30px; transition: all 0.3s; font-size: 16px; box-shadow: 0 8px 25px rgba(0, 245, 255, 0.3); border: 2px solid transparent; text-transform: uppercase; letter-spacing: 0.5px; }
-        .platform-button:hover { transform: scale(1.05); box-shadow: 0 12px 35px rgba(0, 245, 255, 0.5); border-color: #00f5ff; }
+        .platform-button { display: block; text-align: center; padding: 14px; background: linear-gradient(135deg, #00f5ff 0%, #7b2ff7 100%); color: white; text-decoration: none; border-radius: 12px; font-weight: 800; margin-top: 20px; transition: all 0.3s; font-size: 14px; box-shadow: 0 5px 20px rgba(0, 245, 255, 0.3); border: 2px solid transparent; text-transform: uppercase; letter-spacing: 0.5px; }
+        .platform-button:hover { transform: scale(1.05); box-shadow: 0 10px 30px rgba(0, 245, 255, 0.5); border-color: #00f5ff; }
         
-        .bonus-badge { display: inline-block; background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); color: #18181b; padding: 10px 22px; border-radius: 25px; font-size: 13px; font-weight: 800; margin-top: 18px; box-shadow: 0 5px 20px rgba(251, 191, 36, 0.4); text-transform: uppercase; letter-spacing: 0.5px; }
-        .earning-tag { display: inline-block; background: rgba(0, 245, 255, 0.15); color: #00f5ff; padding: 8px 18px; border-radius: 20px; font-size: 13px; font-weight: 700; margin-top: 12px; margin-left: 10px; border: 1px solid rgba(0, 245, 255, 0.3); }
+        .bonus-badge { display: inline-block; background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); color: #18181b; padding: 8px 16px; border-radius: 20px; font-size: 12px; font-weight: 800; margin-top: 12px; box-shadow: 0 3px 15px rgba(251, 191, 36, 0.4); text-transform: uppercase; letter-spacing: 0.3px; }
+        .earning-tag { display: inline-block; background: rgba(0, 245, 255, 0.15); color: #00f5ff; padding: 6px 14px; border-radius: 15px; font-size: 12px; font-weight: 700; margin-top: 8px; margin-left: 8px; border: 1px solid rgba(0, 245, 255, 0.3); }
         
         footer { background: #0a0e27; color: #a1a1aa; padding: 80px 0 40px; margin-top: 80px; border-top: 1px solid rgba(0, 245, 255, 0.1); }
         .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 60px; margin-bottom: 60px; }
@@ -171,8 +171,7 @@
             lydia: "https://www.lydia-app.com",
             revolut: "https://www.revolut.com",
             vivid: "https://www.vivid.money",
-            cmonargent: "https://www.cmonargent.fr",
-            bons plans: "https://www.bonsplans.fr",
+            bonsplans: "https://www.bonsplans.fr",
             radins: "https://www.radins.com",
             dealabs: "https://www.dealabs.com",
 
@@ -246,7 +245,7 @@
     <section class="hero">
         <div class="container">
             <h1>Gagnez de l'Argent en Ligne 💸</h1>
-            <p>51 Plateformes - Cashback, Paris Sportifs, Crypto, Sondages - Tous les Bonus 2025</p>
+            <p>51 plateformes pour gagner de l'argent en ligne en 2025 !</p>
             <a href="#cashback" class="cta-button">Découvrir les Plateformes</a>
             
             <div class="trust-badges">
@@ -263,7 +262,7 @@
             <div class="stats-grid">
                 <div class="stat-item"><h3>100K+</h3><p>Membres</p></div>
                 <div class="stat-item"><h3>€5M+</h3><p>Gains</p></div>
-                <div class="stat-item"><h3>51</h3><p>Plateformes</p></div>
+                <div class="stat-item"><h3>65</h3><p>Plateformes</p></div>
                 <div class="stat-item"><h3>4.9/5</h3><p>Note</p></div>
             </div>
         </section>
